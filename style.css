@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+span{
+    color: crimson;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #100F0F;
+}
+
+nav h1{
+    margin-left: 10px;
+    color: #F1F1F1;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.nav-links ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: red;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.main-page{
+    padding: 3%;
+}
+
+.row{
+    display: flex;
+}
+
+.col-1{
+    flex-basis: 50%;
+}
+
+.col-1 h1{
+    margin-left: 20%;
+    margin-top: 200px;
+    color: white;
+}
+
+.col-1 p{
+    margin-left: 5%;
+    color: #F1F1F1;
+}
+
+.col-2 img{
+    display: flex;
+    width: 600px;
+    margin: 10%;
+}
+
+.skills{
+    display: flex;
+}
+
+.skills img{
+    margin: 60px 14px;
+    margin-left: 9%;
+    width: 150px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    padding: 100px 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01.jpg);
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px;
+}
+
+footer h3{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footerline{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+small{
+    color: white;
+}
+
+.socialmedia{
+    margin: 20px 504px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    cursor: pointer;
+}
+
+.socialmedia i{
+    font-size: 25px;
+    color: #F1F1F1;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact h1{
+    margin: 50px 0;
+    color: white;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container form{
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(172, 17, 151, 0.35) 0px 5px 15px;
+}
+
+.contact-container form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.contact-container form textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 300px;
+}
+
+.contact-container button{
+    border: none;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+}
+
+.about img{
+    height: auto;
+    width: 430px;
+}
+
+.about-text{
+    width: 500px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-text h2{
+    color: #fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 45px;
+}
+
+button{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
+
+.service{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: crimson;
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4;
+}
+
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
+
+.player{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title-two h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card-two{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card-two i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: crimson;
+}
+
+.pra-two p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card-two .button{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4;
+}
+
+.card-two .button:hover{
+    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
