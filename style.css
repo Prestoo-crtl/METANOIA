@@ -194,6 +194,11 @@ nav h1{
     align-items: center;
 }
 
+.main img{
+    height: auto;
+    width: 430px;
+}
+
 .about-text h2{
     color: #fff;
     font-size: 75px;
@@ -551,7 +556,6 @@ footer{
         align-items: center;
     }
 
-    
 
     .col-1 p{
         display: flex;
