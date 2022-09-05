@@ -12,6 +12,7 @@ main{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 span{
@@ -23,7 +24,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 1%;
-    background-color: #100F0F;
+}
+
+nav .fa-solid{
+    display: none;
 }
 
 nav h1{
@@ -76,6 +80,7 @@ nav h1{
 .col-1 p{
     margin-left: 5%;
     color: #F1F1F1;
+    font-weight: 500;
 }
 
 .col-2 img{
@@ -93,31 +98,6 @@ nav h1{
     margin-left: 9%;
     width: 150px;
     cursor: pointer;
-}
-
-footer{
-    width: 100%;
-    padding: 100px 0px;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01.jpg);
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1px;
-}
-
-footer h3{
-    margin-bottom: 15px;
-    color: white;
-}
-
-.footerline{
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-}
-
-small{
-    color: white;
 }
 
 .socialmedia{
@@ -193,6 +173,7 @@ small{
     width: 100%;
     padding: 100px 0px;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    background-attachment: fixed;
 }
 
 .about img{
@@ -256,6 +237,8 @@ button:hover{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
     width: 100%;
     padding: 100px 0px;
+    flex-wrap: wrap;
+    background-attachment: fixed;
 }
 
 .title h2{
@@ -271,6 +254,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -283,6 +267,7 @@ button:hover{
     position: relative;
     overflow: hidden;
     text-align: center;
+    flex-wrap: wrap;
 }
 .card i{
     font-size: 50px;
@@ -290,6 +275,13 @@ button:hover{
     text-align: center;
     margin: 25px 0px;
     color: crimson;
+}
+
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 h5{
@@ -330,6 +322,7 @@ h5{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 .contact-me p{
@@ -360,7 +353,9 @@ h5{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
     width: 100%;
     padding: 100px 0px;
+    background-attachment: fixed;
 }
+
 
 .title-two h2{
     color: white;
@@ -375,6 +370,7 @@ h5{
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    flex-wrap: wrap;
 }
 
 .card-two{
@@ -387,6 +383,7 @@ h5{
     position: relative;
     overflow: hidden;
     text-align: center;
+    flex-wrap: wrap;
 }
 .card-two i{
     font-size: 50px;
@@ -394,6 +391,13 @@ h5{
     text-align: center;
     margin: 25px 0px;
     color: crimson;
+}
+
+.card-two:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .pra-two p{
@@ -418,4 +422,188 @@ h5{
     background-color: transparent;
     border: 2px solid crimson;
     cursor: pointer;
+}
+
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    height: auto;
+    width: 100vw;
+    font-family: Montserrat;
+    padding-top: 40px;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover{
+    color: crimson;
+}
+
+.footer-bottom{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/meta\ cover-01\ \(1\).jpg);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-bottom p{
+    font-size: 15px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    nav .nav-links{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color:  #100F0F;
+        width: 200px;
+        height: 100vh;
+    }
+
+    nav .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    nav .nav-links li{
+        margin-top: 15px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 15px;
+    }
+
+    .skills{
+        width: 5px;
+    }
+
+    .skills img{
+        width: 115px;
+    }
+
+    .col-1 {
+        font-size: 10px;
+    }
+
+    .col-1 h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .col-1 p{
+        display: flex;
+        text-align: center;
+    }
+
+    .col-1 p span{
+        display: flex;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .col-2 img{
+        width: 200px;
+        height: auto;
+        display: flex;
+        margin: 0;
+        margin-top: 80%;
+    }
+
+    .contact-me p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .title h2{
+        font-size: 50px;
+        display: flex;
+        margin-left: 17%;
+    }
+
+    .title-two h2{
+        font-size: 40px;
+        display: flex;
+        margin-left: 7%;
+    }
+
+    .main img{
+        width: 250px;
+        margin-top: 30%;
+    }
+
+    .main p{
+        font-size: 10px;
+    }
+
+    .main h2{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 9px;
+        margin-bottom: 25%;
+    }
 }

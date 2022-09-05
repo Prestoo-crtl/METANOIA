@@ -10,20 +10,26 @@
     <title>Metanoia Esports</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/Metanoia (1).png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/3dbdfe24c1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3dbdfe24c1.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
     <body>
         <main>
             <!-- Hero Section -->
         <nav>
             <h1>METANOIA</h1>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="navClose()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Managers</a></li>
+                    <li><a href="#players">Main Players</a></li>
+                    <li><a href="#join">Join Us</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="navOpen()"></i>
         </nav>
         <div class="main-page">
             <div class="mainpage-container">
@@ -45,11 +51,11 @@
                 </div>
             </div>
         </div>
-    </main>
+    
     <!-- End of Hero Section -->
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about">
         <div class="main">
             <img src="./img/HOLSTER-Transparent.png">
             <div class="about-text">
@@ -81,6 +87,7 @@
     <!-- End of About Section -->
     
     <!-- service section start -->
+    <section id="service">
     <div class="service">
         <div class="title">
             <h2>MANAGER</h2>
@@ -122,8 +129,9 @@
             
         </div>
     </div>
-
+    </section>
         <!-- player section start -->
+        <section id="players">
         <div class="player">
             <div class="title-two">
                 <h2>MAIN 5 PLAYERS</h2>
@@ -185,24 +193,42 @@
                 </div>
             </div>
         </div>
+    </section>
     <!-- CONTACT ME -->
-    <div class="contact-me">
-        <p>IF U WANT TO BE PART OF OUR GROWING COMMUNITY</p>
-        <a class="button-two" href="https://forms.gle/skQ2BfUbg3dSKAGb7">SIGNUP</a>
-    </div>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/MetanoiaEsportsPH/"><i class="fa-brands fa-facebook"></i></a>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
-        </div>
-        <div class="footerline"></div>
-        <small>© 2022 Metanoia Esports Company all rights reserve</small>
-    </footer>
+            <section id="join">
+                <div class="contact-me">
+                    <p>IF U WANT TO BE PART OF OUR GROWING COMMUNITY</p>
+                    <a class="button-two" href="https://forms.gle/skQ2BfUbg3dSKAGb7">SIGNUP</a>
+                </div>
+            </section>
+                <footer>
+                    <div class="footer-content">
+                        <h3>METANOIA ESPORTS</h3>
+                        <p>We Are Aiming High, Be Limitless</p>
+                        <ul class="socials">
+                            <li><a href="https://web.facebook.com/gaming/MetanoiaEsportsPH"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>copyright &copy;2022 METANOIA ESPORTS. designed by <span>Presto-ctrl</span></p>
+                    </div>
+                </footer>
+                <script>
+
+                    const navLinks = document.getElementById("navLinks");
+
+                    function navClose(){
+                        navLinks.style.right = "-200px";
+                    }
+                    
+                    function navOpen(){
+                        navLinks.style.right = "0px";
+                    }
+
+                </script>
+            
+            </main>
 </body>
     <!-- end of the project -->
 </html>
